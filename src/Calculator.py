@@ -49,3 +49,8 @@ class Calculator:
         self.result = multiplication(a, b)
         return self.result
 
+    def division(self, a, b):
+        a = int(a)
+        b = int(b)
+        self.result = division(a, b)
+        return self.result
