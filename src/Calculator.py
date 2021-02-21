@@ -54,3 +54,8 @@ class Calculator:
         b = int(b)
         self.result = division(a, b)
         return self.result
+
+    def square(self, a):
+        a = int(a)
+        self.result = square(a)
+        return self.result
