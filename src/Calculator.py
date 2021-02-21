@@ -21,7 +21,7 @@ def square(a):
     return a * a
 
 
-def root(a):
+def sqroot(a):
     return math.sqrt(a)
 
 
@@ -58,4 +58,9 @@ class Calculator:
     def square(self, a):
         a = int(a)
         self.result = square(a)
+        return self.result
+
+    def sqroot(self, a):
+        a = int(a)
+        self.result = root(a)
         return self.result
