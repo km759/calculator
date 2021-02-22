@@ -50,8 +50,8 @@ class Calculator:
         return self.result
 
     def division(self, a, b):
-        a = int(a)
-        b = int(b)
+        a = float(a)
+        b = float(b)
         self.result = division(a, b)
         return self.result
 
@@ -61,6 +61,6 @@ class Calculator:
         return self.result
 
     def sqroot(self, a):
-        a = int(a)
-        self.result = root(a)
+        a = float(a)
+        self.result = sqroot(a)
         return self.result
