@@ -1,28 +1,9 @@
-import math
-
-
-def addition(a, b):
-    return a + b
-
-
-def subtraction(a, b):
-    return a - b
-
-
-def multiplication(a, b):
-    return a * b
-
-
-def division(a, b):
-    return b / a
-
-
-def square(a):
-    return a * a
-
-
-def sqroot(a):
-    return math.sqrt(a)
+from addition import addition
+from subtraction import subtraction
+from multiplication import multiplication
+from division import division
+from square import square
+from squareRoot import sqroot
 
 
 class Calculator:
@@ -34,13 +15,13 @@ class Calculator:
     def add(self, a, b):
         a = int(a)
         b = int(b)
-        self.result = a + b
+        self.result = addition(a, b)
         return self.result
 
     def subtract(self, a, b):
         a = int(a)
         b = int(b)
-        self.result = a - b
+        self.result = subtraction(a, b)
         return self.result
 
     def multiplication(self, a, b):
